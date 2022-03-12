@@ -1,1 +1,2 @@
-web: sh setup.sh && flask run
+web: gunicorn app
+init: FLASK_APP=app.py flask run
